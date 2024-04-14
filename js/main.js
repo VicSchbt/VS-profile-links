@@ -1,4 +1,4 @@
-const prefixImageLight = 'assets/icons-light-mode/';
+const prefixImageLight = '/assets/icons-light-mode/';
 
 const profile = {
 	name: 'Vic Schbt',
