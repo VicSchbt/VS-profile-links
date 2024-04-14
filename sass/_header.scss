@@ -1,0 +1,64 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 16px;
+	&-content {
+		&__image {
+			height: 8rem;
+			width: 8rem;
+			object-fit: contain;
+			border-radius: 8rem;
+			background-color: white;
+		}
+		&__name {
+			font-size: 1.5rem;
+		}
+		&__labels {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			justify-content: center;
+		}
+		&__label {
+			list-style: none;
+			border: 1px solid black;
+			font-size: 0.75rem;
+			padding: 0.125rem 0.25rem;
+			border-radius: 1rem;
+		}
+		&__bio {
+			font-style: italic;
+			font-size: 0.875rem;
+			text-align: center;
+			background-color: rgb(242, 242, 242);
+			padding: 0.5rem;
+			border-radius: 0.25rem;
+		}
+		&__links {
+			display: flex;
+			gap: 8px;
+			justify-content: center;
+		}
+		&__link {
+			list-style: none;
+			a {
+				display: block;
+				height: 2.2rem;
+				width: 2.2rem;
+				// border: 1px solid black;
+				// border-radius: 1.1rem;
+				img {
+					height: 1.8rem;
+					width: 1.8rem;
+					object-fit: contain;
+					position: relative;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
+}
