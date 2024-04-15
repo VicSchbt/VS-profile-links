@@ -40,5 +40,10 @@ profile.labels.forEach((label) => {
 });
 
 profile.links.forEach((link) => {
-	linksList.innerHTML += `<li class="header-content__link"><a href="${link.url}" target="_blank" aria-label="${link.label}"><img src="${link.icon}" alt="icon ${link.label}"/></a></li>`;
+	linksList.innerHTML += `
+	<li class="header-content__link">
+		<a href="${link.url}" target="_blank" aria-label="${link.label}">
+			<img src="${link.icon}" alt="icon ${link.label}" type="image/png"/>
+		</a>
+	</li>`;
 });
