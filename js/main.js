@@ -14,7 +14,7 @@ const profile = {
     },
     {
       label: "LinkedIn",
-      url: "https://www.linkedin.com/feed/",
+      url: "https://www.linkedin.com/victoire-schubert",
       icon: `${iconPrefix}icon-linkedin-50x50-black.png`,
     },
     {
