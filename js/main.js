@@ -1,5 +1,3 @@
-const prefixImageLight = "assets/";
-
 const profile = {
   name: "Vic Schbt",
   location: "Lille, France",
@@ -10,17 +8,17 @@ const profile = {
     {
       label: "Github",
       url: "https://github.com/VicSchbt",
-      icon: `${prefixImageLight}icon-github-30x30-black.png`,
+      icon: `assets/icons-light-mode/icon-github-30x30-black.png`,
     },
     {
       label: "LinkedIn",
       url: "https://www.linkedin.com/feed/",
-      icon: `${prefixImageLight}icon-linkedin-50x50-black.png`,
+      icon: `assets/icons-light-mode/icon-linkedin-50x50-black.png`,
     },
     {
       label: "Instagram",
       url: "https://www.instagram.com/vicschbt.codes/",
-      icon: `${prefixImageLight}icon-instagram-30x30-black.png`,
+      icon: `assets/icons-light-mode/icon-instagram-30x30-black.png`,
     },
   ],
 };
@@ -43,12 +41,7 @@ profile.links.forEach((link) => {
   linksList.innerHTML += `
 	<li class="header-content__link">
 		<a href="${link.url}" target="_blank" aria-label="${link.label}">
-			
+			<img src="${link.icon}" alt="icon ${link.label}" type="image/png"/>
 		</a>
 	</li>`;
-  const lastA = document.querySelector(".header-content__link:last-child a");
-  console.log(lastA);
-  const img = document.createElement("img");
-  img.src = link.icon;
-  lastA.appendChild(img);
 });
