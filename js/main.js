@@ -7,11 +7,11 @@ const profile = {
   description:
     "Working as Web Developer the day, Becoming a Creative Developer at night.",
   links: [
-    // {
-    // 	label: 'Github',
-    // 	url: 'https://github.com/VicSchbt',
-    // 	icon: `${prefixImageLight}icon-github-30x30-black.png`,
-    // },
+    {
+      label: "Github",
+      url: "https://github.com/VicSchbt",
+      icon: `${prefixImageLight}icon-github-30x30-black.png`,
+    },
     {
       label: "LinkedIn",
       url: "https://www.linkedin.com/feed/",
@@ -43,7 +43,12 @@ profile.links.forEach((link) => {
   linksList.innerHTML += `
 	<li class="header-content__link">
 		<a href="${link.url}" target="_blank" aria-label="${link.label}">
-			<img src="${link.icon}" alt="icon ${link.label}" type="image/png"/>
+			
 		</a>
 	</li>`;
+  const lastA = document.querySelector(".header-content__link:last-child a");
+  console.log(lastA);
+  const img = document.createElement("img");
+  img.src = link.icon;
+  lastA.appendChild(img);
 });
