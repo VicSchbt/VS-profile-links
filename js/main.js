@@ -1,4 +1,4 @@
-const prefixImageLight = '/assets/icons-light-mode/';
+const prefixImageLight = 'assets/icons-light-mode/';
 
 const profile = {
 	name: 'Vic Schbt',
@@ -10,7 +10,7 @@ const profile = {
 		{
 			label: 'Github',
 			url: 'https://github.com/VicSchbt',
-			icon: `${prefixImageLight}icon-github-30x30-black.png`,
+			icon: `assets/icons-dark-mode/icon-github-30x30-white.png`,
 		},
 		{
 			label: 'LinkedIn',
