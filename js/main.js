@@ -1,3 +1,5 @@
+const iconPrefix = "icons/light-mode/";
+
 const profile = {
   name: "Vic Schbt",
   location: "Lille, France",
@@ -8,17 +10,17 @@ const profile = {
     {
       label: "Github",
       url: "https://github.com/VicSchbt",
-      icon: `assets/icons-light-mode/icon-github-30x30-black.png`,
+      icon: `${iconPrefix}icon-github-30x30-black.png`,
     },
     {
       label: "LinkedIn",
       url: "https://www.linkedin.com/feed/",
-      icon: `assets/icons-light-mode/icon-linkedin-50x50-black.png`,
+      icon: `${iconPrefix}icon-linkedin-50x50-black.png`,
     },
     {
       label: "Instagram",
       url: "https://www.instagram.com/vicschbt.codes/",
-      icon: `assets/icons-light-mode/icon-instagram-30x30-black.png`,
+      icon: `${iconPrefix}icon-instagram-30x30-black.png`,
     },
   ],
 };
